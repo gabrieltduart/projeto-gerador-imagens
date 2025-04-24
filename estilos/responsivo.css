@@ -1,0 +1,46 @@
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/*Está junto com o sobre - ajuste de img*/
+@media (min-width: 992px) {
+    .sobre-conteudo {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/*Mensagem da area do contato - lembrar*/
+@media (min-width: 768px) {
+    .contato-forms {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .altura-max {
+        grid-column: span 2;
+    }
+}
+
+.time {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.membros-do-time-img {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.membros-do-time-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
