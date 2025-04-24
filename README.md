@@ -1,1 +1,0 @@
-# projeto-gerador-imagens
