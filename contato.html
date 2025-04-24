@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Meu Projeto</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fale Conosco</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="gerar.html">Gerar</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="cartas-imagens">
+
+            <br>
+            <h2>Envie sua Mensagem</h2>
+            
+            <form id="forms-contato" class="contato-forms">
+
+                <!--Área do Nome-->
+                <div class="forms-grupo">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <!--Área do Email-->
+                <div class="forms-grupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="forms-grupo altura-max">
+                    <label for="subject">Assunto:</label>
+                    <select id="subject" name="subject">
+                        <option value="">Selecione...</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="parceria">Parceria</option>
+                        <option value="outros">Outro</option>
+                    </select>
+                </div>
+                
+                <div class="forms-grupo altura-max">
+                    <label for="message">Mensagem: (Max: 1000 Caracteres)</label>
+                    <textarea id="message" name="message" maxlength="1000"></textarea>
+                </div>
+                
+                <div class="acoes-do-forms">
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </div>
+            </form>
+        </section>
+        
+        <section class="formas-contato">
+            <h2>Outras Formas de Contato</h2>
+            <ul>
+                <li>✉️ contato@cesar.school</li>
+                <li>📞(xx) xxxxx-xxxx</li>
+                <li>🏢 Cais do Apolo 77 - CESAR SCHOOL BRUM</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>2025 Meu Projeto.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>

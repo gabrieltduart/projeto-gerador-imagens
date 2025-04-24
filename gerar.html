@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Imagens | Meu Projeto</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Imagens</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="gerar.html">Gerar</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="cartas-imagens">
+            <h2>Crie sua imagem</h2>
+            <form id="imagem">
+                <div class="grupo">
+                    <label for="descricao-img">Descrição:</label>
+                    <textarea id="descricao-img" required placeholder="Descreva a imagem que deseja gerar..."></textarea>
+                </div>
+                
+                <div class="grupo">
+                    <label for="estilo-imagens">Estilo:</label>
+                    <select id="estilo-imagens">
+                        <option value="realsita">Realista</option>
+                        <option value="desenho-animado">Desenho Animado</option>
+                        <option value="abstrato">Abstrato</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="botao">Gerar Imagem</button>
+            </form>
+            
+            <div id="carregando" class="carregando" style="display: none;">
+                <p>Gerando sua imagem...</p>
+                <div class="carregado"></div>
+            </div>
+            
+            <div id="resultado" class="resultado"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>2025 Meu Projeto.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
